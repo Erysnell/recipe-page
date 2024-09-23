@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+
+    .recipe-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .recipe-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .preparation, .ingredients, .instructions, .nutrition {
+        margin: 10px;
+    }
+
+    .preparation ul li, .ingredients ul li, .instructions ol li {
+        padding-left:15px;
+    }
+
+    .nutrition table td, .nutrition table th {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    .recipe-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .recipe-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .preparation, .ingredients, .instructions, .nutrition {
+        margin: 5px;
+    }
+
+    .preparation ul li, .ingredients ul li, .instructions ol li {
+        padding-left:10px;
+    }
+
+    .nutrition table td, .nutrition table th {
+        padding: 5px;
+    }
+}
