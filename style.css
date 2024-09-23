@@ -1,5 +1,5 @@
 body {
-
+    font-family: 'Outfit', sans-serif;
     background-color: hsl(30, 54%, 90%);
 }
 
@@ -18,7 +18,7 @@ body {
 .recipe-container{
     text-align: center;
     background-color: hsl(0, 0%, 100%);
-    width: 600px;
+    width: 650px;
     border-radius: 15px;
     padding: 30px;
 
@@ -28,12 +28,37 @@ body {
 .recipe-image{
     width: 550px;
     height: 250px;
-    border-radius: 7px;
-    margin-top: 1.5rem;
+    padding: 5px;
+    border-radius: 20px;
+
 
 }
 
 .preparation, .ingredients, .instructions, .nutrition {
     text-align: left;
     margin: 10px;
+}
+
+ h2 {
+    font-family: 'Young Serif', serif;
+     color: hsl(14, 45%, 36%)
+}
+ h1{
+     font-family: 'Young Serif', serif;
+     text-align: left;
+     margin-left: 15px;
+ }
+
+.ingredients ul li::marker {
+    color: hsl(14, 45%, 36%); /* point color */
+
+}
+
+.instructions ol li::marker {
+    color: hsl(14, 45%, 36%); /* number color */
+
+}
+
+.nutrition td {
+    color:hsl(332, 51%, 32%);
 }
