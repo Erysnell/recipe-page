@@ -1,10 +1,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(30, 54%, 90%);
-
 }
-
-
 
 .container{
     margin: 0;
@@ -23,21 +20,22 @@ body {
     border-radius: 15px;
     padding: 30px;
 
-
 }
 
 .recipe-image{
     width: 650px;
     height: 250px;
+    border-radius: 10px;
+}
 
-    border-radius: 20px;
-
-
+header p {
+    color: hsl(30, 10%, 34%);
 }
 
 .preparation, .ingredients, .instructions, .nutrition {
     text-align: left;
     margin: 10px;
+    color: hsl(30, 10%, 34%);
 }
 
 .preparation h3 {
@@ -50,13 +48,26 @@ body {
     padding: 15px;
     margin: 40px 10px 40px ;
     border-radius: 10px;
-    line-height: 2.0;
+}
+
+.preparation ul {
+    line-height: 2.0; /* Line spacing */
+    list-style-position: outside /* Ensures that the point is outside the container */
+}
+
+.preparation ul li {
+    padding-left:15px /* Add a space to the left of the period */
+}
+
+.preparation ul li::marker {
+    color: hsl(332, 51%, 32%) /* point color */
 }
 
  h2 {
     font-family: 'Young Serif', serif;
-     color: hsl(14, 45%, 36%)
+     color: hsl(14, 45%, 36%);
 }
+
  h1{
      font-family: 'Young Serif', serif;
      text-align: left;
@@ -65,12 +76,30 @@ body {
 
 .ingredients ul li::marker {
     color: hsl(14, 45%, 36%); /* point color */
+}
 
+.ingredients ul {
+    line-height: 2.0;
+    list-style-position: outside;
+}
+
+.ingredients ul li {
+    padding-left:15px;
+    margin-left: -18px
 }
 
 .instructions ol li::marker {
     color: hsl(14, 45%, 36%); /* number color */
+}
 
+.instructions ol li {
+    margin-bottom: 10px;
+    margin-left: -18px;
+    padding-left:15px
+}
+
+.instructions ol {
+    list-style-position: outside;
 }
 
 .nutrition td {
@@ -78,17 +107,17 @@ body {
 }
 
 .nutrition table {
-    border-collapse: collapse; /* Asegura que los bordes se colapsen en una sola línea */
+    border-collapse: collapse; /* Ensures that the borders are collapsed into a single line */
     width: 100%;
 }
 
 .nutrition table tr:not(:last-child) {
-    border-bottom: 1px solid hsl(30, 10%, 34%); /* Aplica el borde a la fila completa */
+    border-bottom: 1px solid hsl(30, 54%, 90%); /* Apply the border to the entire row */
 }
 
 .nutrition table td, .nutrition table th {
-    padding: 10px; /* Ajusta este valor según tus necesidades */
-    box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;  /* Ensures that the padding does not affect the cell width */
 }
 .nutrition table td {
     padding-left: 100px;
@@ -103,5 +132,8 @@ body {
 }
 
 hr {
-    color: hsl(30, 54%, 90%);
+    border: none;
+    border-top: 1px solid hsl(30, 54%, 90%); /* Apply the desired color and thickness */
+    color: transparent; /* Ensures that the default color does not affect the border color */
+    background-color: transparent; /* Ensures that the background color does not affect the border color */
 }
