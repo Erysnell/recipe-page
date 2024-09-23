@@ -1,6 +1,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(30, 54%, 90%);
+
 }
 
 
@@ -26,9 +27,9 @@ body {
 }
 
 .recipe-image{
-    width: 550px;
+    width: 650px;
     height: 250px;
-    padding: 5px;
+
     border-radius: 20px;
 
 
@@ -37,6 +38,19 @@ body {
 .preparation, .ingredients, .instructions, .nutrition {
     text-align: left;
     margin: 10px;
+}
+
+.preparation h3 {
+    color: hsl(332, 51%, 32%);
+    margin-left: 15px;
+}
+.preparation {
+    background-color:hsl(330, 100%, 98%);
+    align-items: center;
+    padding: 15px;
+    margin: 40px 10px 40px ;
+    border-radius: 10px;
+    line-height: 2.0;
 }
 
  h2 {
@@ -61,4 +75,33 @@ body {
 
 .nutrition td {
     color:hsl(332, 51%, 32%);
+}
+
+.nutrition table {
+    border-collapse: collapse; /* Asegura que los bordes se colapsen en una sola línea */
+    width: 100%;
+}
+
+.nutrition table tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 10%, 34%); /* Aplica el borde a la fila completa */
+}
+
+.nutrition table td, .nutrition table th {
+    padding: 10px; /* Ajusta este valor según tus necesidades */
+    box-sizing: border-box;
+}
+.nutrition table td {
+    padding-left: 100px;
+}
+
+.nutrition table th {
+    padding-left: 32px;
+}
+
+.nutrition {
+    line-height: 2.0;
+}
+
+hr {
+    color: hsl(30, 54%, 90%);
 }
